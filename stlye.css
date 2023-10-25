@@ -1,0 +1,281 @@
+@font-face {
+  font-family: Cairo;
+  src: url("./fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
+}
+body {
+  background-color: darkslategray;
+  font-family: Cairo;
+  text-align: right;
+  /* Updated to right alignment */
+}
+
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  direction: rtl;
+  /* Added right-to-left direction */
+}
+
+/* Styling form-control Class */
+.form-control {
+  text-align: right;
+  /* Updated to right alignment */
+  margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+
+}
+label {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label.questionLabel {
+  border-bottom: 1px solid grey !important;
+}
+
+/* Styling form-control input, select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 15px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+  text-align: right;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+button {
+  background-color: darkslategray;
+  color: white;
+  border: 1px solid #777;
+  border-radius: 15px;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  /* Added center alignment */
+}
+@media (max-width: 768px) {
+
+  /* Adjust font size and padding for medium-sized screens */
+  .submitBtn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Adjust font size and padding for smaller screens */
+  .submitBtn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  /* Added center alignment */
+}
+
+.hidden {
+  display: none;
+}
+
+.form-control input[type="radio"],
+.form-control label {
+  display: inline;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.arrow::after {
+  content: "\25BC";
+  /* Downward-pointing arrow */
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.open .arrow::after {
+  content: "\25B2";
+  /* Upward-pointing arrow */
+}
+
+.form-control {
+  display: none;
+}
+
+.open .form-control {
+  display: block;
+}
+p {
+  display: none;
+}
+.open p {
+  display: block;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: 15px;
+}
+.checkbox-container {
+  display: block;
+  /* flex-wrap: wrap; */
+}
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.checkbox-item{
+  display: flex;
+}
+.grid-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.radio-container {
+  text-align: center;
+}
+
+.blod {
+  font-weight: bold;
+}
+
+.checkbox-container label {
+    font-weight: bold;
+}
+.radio-container label {
+    font-weight: normal;
+}
+ @media screen and (max-width: 768px) {
+
+   /* Adjust font sizes, margins, padding, etc. as needed */
+   label {
+     font-size: 16px;
+   }
+
+   /* Add more responsive styles for other elements */
+ }
+
+  @media screen and (max-width: 450px) {
+
+    /* Further adjustments for even smaller screens */
+    .questionForm select,
+    .questionForm input[type="radio"],
+    .questionLabel,
+    h2 {
+      font-size: 10px;
+    }
+
+    /* Adjust margins or padding as needed */
+    .checkbox-container,
+    .radio-container {
+      margin-top: 2px;
+          }
+    .form-control input[type="radio"], .form-control label {
+      display: inline;
+      margin-right: 5px;
+      font-size: 12px !important;
+}
+label.questionLabel {
+    font-weight: bold !important;
+}
+label {
+    font-size: 14px;
+}
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+    display: inline-block;
+    width: 10px;
+}
+
+
+
+      }
+
+/* intro  */
+.heading {
+  background-color: grey;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  max-width: 575px;
+  margin: 10px auto;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+
+  /* Adjust font size for medium-sized screens */
+  .heading {
+    font-size: 20px;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Adjust font size for smaller screens */
+  .heading {
+    font-size: 18px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 14px;
+    max-width: 400px;
+  }
+
+  /* Further adjustments for even smaller screens */
+  .questionForm select,
+  .questionForm input[type="radio"],
+  .questionLabel,
+  h2 {
+    font-size: 10px;
+  }
+
+  /* Adjust margins or padding as needed */
+  .checkbox-container,
+  .radio-container {
+    margin-top: 2px;
+  }
+}
